@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- this line is a comment -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Rami Faisal">
+    <meta name="description" content="This page contains all the web development concepts I am learning to build.">
+    <title>My First Web Page</title>
+    <link rel="icon" href="resources/html_icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+
+    <h1>Hello World!</h1>
+    <figure>
+        <img src="resources/rami.jpg" alt="Rami" style="width:200px;height:200px;" title="Rami">
+        <figcaption>Rami</figcaption>
+    </figure>
+
+    <aside>
+        <details>
+            <summary>
+                Who is he?
+            </summary>
+            <p>He is Rami Faisal Ahmed Saleh, a student at KAU.
+            </p>
+        </details>
+    </aside>
+
+    <hr>
+
+    <nav aria-label="primary-navigation">
+        <!-- the aria-label is just a good thing to add if you have multiple nav elements -->
+        <ul>
+            <li>
+                <a href="#learning_html">Learning HTML</a>
+            </li>
+            <li>
+                <a href="#my_daily_schedule">My Daily Schedule</a>
+            </li>
+            <li>
+                <a href="#Aizen">Aizen Sosuke</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+
+        <article id="learning_html">
+            <h2>I'm Ready to Learn HTML</h2>
+            <ul>
+                <li>
+                    <p>I am already learning <abbr
+                            title="HyperText Markup Language - used for structuring web pages">HTML</abbr> <strong>let's
+                            go!</strong></p>
+                </li>
+                <li>
+                    <p>I am on <em>Lesson 2</em></p>
+                </li>
+                <li>
+                    <p>Location:</p>
+                    <address>Hira Street, Jeddah</address>
+                </li>
+            </ul>
+        </article>
+        <hr>
+        <article id="my_daily_schedule">
+            <h3>My Daily Schedule</h3>
+            <p>Here is how I organize my learning:</p>
+            <ol>
+                <li>...I learn more about web development.</li>
+                <li>...I plan out my schedule.</li>
+                <li>...I use resources from MDN.</li>
+            </ol>
+            <dl>
+                <dt>Web Development</dt>
+                <dd>The work involved in developing a website for the Internet or an intranet.</dd>
+            </dl>
+
+            <table>
+                <caption>My daily schedule</caption>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+                <tr>
+                    <td>
+                        <time datetime="12:00">12:00 PM</time> - <time datetime="15:00">3:00 PM</time>
+                    </td>
+                    <td>Study and religious studies</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <time datetime="16:00">4:00 PM</time> - <time datetime="18:00">6:00 PM</time>
+                    </td>
+                    <td>Learn coding & practice</td>
+                </tr>
+                <tr>
+                    <td>
+                        <time datetime="22:00">10:00 PM</time> - <time datetime="00:00">12:00 AM</time>
+                    </td>
+                    <td>Recreation / watch a movie</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">All other times</td>
+                    <td>Free time & hobbies</td>
+
+                </tr>
+                <tr>
+                    <td>Family time & rest</td>
+                </tr>
+            </table>
+        </article>
+
+        <section id="Aizen">
+            <h3><strong>Yōkoso</strong></h3>
+
+            <img src="resources/AIZEN.JPG" style="width: 200px; height: 200px;" alt="Aizen" title="Yōkoso"
+                loading="lazy">
+            <p>Character Profile: <abbr title="Bleach Antagonist">
+                    <a href="https://bleach.fandom.com/wiki/Sōsuke_Aizen" target="_blank">Aizen Sosuke</a>
+                </abbr></p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <p>
+                        <label for="aizen">Is he a good villain?</label>
+                        <input type="text" name="aizen" id="aizen" placeholder="Write yes or no" autocomplete="on"
+                            required>
+                    </p>
+                    <p>
+                        <label for="Username">Username</label>
+                        <input type="text" name="Username" id="Username" placeholder="John" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="Password">Password</label>
+                        <input type="password" name="Password" id="Password" placeholder="Enter password"
+                            autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="966-055-5555" autocomplete="on"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                    </p>
+                    <p>
+                        <label for="decade">Decade</label>
+                        <input type="number" name="decade" id="decade" placeholder="1958" autocomplete="on" min="200"
+                            max="2020" step="10" value="1950">
+                    </p>
+                    <p>
+                        <label for="tea">What's your favourite tea?</label>
+                        <select name="tea" id="tea">
+                            <option value="red tea">Red tea</option>
+                            <option value="green tea">Green tea</option>
+                            <option value="karak">Tea with milk (Karak)</option>
+                            <option value="cold tea">Iced tea</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="tea_datalist">Search or type your favourite tea:</label>
+                        <input type="text" name="tea" id="tea_datalist" list="tea-list">
+                        <datalist id="tea-list">
+                            <option value="Red tea">Red tea</option>
+                            <option value="Green tea">Green tea</option>
+                            <option value="Tea with milk (Karak)">Tea with milk (Karak)</option>
+                            <option value="Iced tea">Iced tea</option>
+                            <option value="Other">Other</option>
+                        </datalist>
+                    </p>
+                    <p>
+                        <label for="favourite_anime">What's your favourite anime?</label>
+                        <select name="favourite_anime" id="favourite_anime">
+                            <optgroup label="Shonen">
+                                <option value="naruto">Naruto</option>
+                                <option value="dragonball">Dragon Ball</option>
+                                <option value="one piece">One Piece</option>
+                                <option value="bleach">Bleach</option>
+                                <option value="hunter x hunter">Hunter x Hunter</option>
+                                <option value="fire force">Fire Force</option>
+                            </optgroup>
+                            <optgroup label="Romance">
+                                <option value="kaguya-sama">Kaguya-sama</option>
+                                <option value="your lie in april">Your Lie in April</option>
+                                <option value="hyouka">Hyouka</option>
+                            </optgroup>
+                            <optgroup label="Seinen">
+                                <option value="monster" selected>Monster</option>
+                                <option value="pluto">Pluto</option>
+                                <option value="berserk">Berserk</option>
+                                <option value="vinland saga">Vinland Saga</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <br>
+                    <fieldset>
+                        <legend>What is your favourite food?</legend>
+                        <p>
+                            <input type="radio" name="food" id="shawarma" value="shawarma">
+                            <label for="shawarma">Shawarma</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="pizza" value="pizza">
+                            <label for="pizza">Pizza</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="baik" value="baik">
+                            <label for="baik">Albaik</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="rice" value="rice">
+                            <label for="rice">Rice</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="other" value="other">
+                            <label for="other">Other</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What phone do you own?</legend>
+                        <input type="checkbox" name="phone" id="iphone" value="iphone">
+                        <label for="iphone">iPhone</label>
+
+                        <input type="checkbox" name="phone" id="galaxy" value="galaxy">
+                        <label for="galaxy">Samsung Galaxy</label>
+
+                        <input type="checkbox" name="phone" id="huawei" value="huawei">
+                        <label for="huawei">Huawei</label>
+
+                        <input type="checkbox" name="phone" id="xiaomi" value="xiaomi">
+                        <label for="xiaomi">Xiaomi</label>
+
+                        <input type="checkbox" name="phone" id="other_phone" value="other_phone">
+                        <label for="other_phone">Other</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Send me a note</legend>
+                        <label for="message">Your message:</label>
+                        <br>
+                        <textarea name="message" id="message" cols="40" rows="10"
+                            placeholder="Type your message here..."></textarea>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Submit</button>
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                    <button type="reset">Reset</button>
+
+                </fieldset>
+            </form>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <h4>Footer & Entities</h4>
+        <p>HTML Character Entities:
+            <br> 22 &lt; 44
+            <br>
+            <br> &lt;&lt;&lt; &copy; <a href="about.html">Rami Faisal</a> &gt;&gt;&gt;
+        </p>
+    </footer>
+
+    <p><a href="#">Back to top</a></p>
+</body>
+
+</html>
