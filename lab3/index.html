@@ -1,1 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
+  <body>
+    
+
+    <div class="image-preview">
+      <img src="https://cpit405.gitlab.io/images/KAU_logo.png" />
+    </div>
+
+
+    <br>
+    <hr>
+    <br>
+
+
+    <div id="header">
+      <span class="myclass1">Every</span>
+      <span class="myclass2">one can</span>
+      <span class="myclass3">success.</span>
+    </div>
+    <p>
+      One machine can do the work of fifty ordinary men.
+      <span class="myclass4"
+        >No machine can do the work of one extraordinary man.</span
+      >
+    </p>
+
+    <style>
+      p > span {
+        color: red;
+      }
+      #header span {
+        color: pink;
+      }
+      span {
+        color: green;
+      }
+      #header *:last-child {
+        color: orange;
+      }
+      #header span:first-child:hover {
+        color: blue;
+      }
+      th {
+        background-color: #4e4c4c;
+      }
+      
+    </style>
+
+    <table>
+      <th>
+        selector
+      </th>
+      <th>
+        color
+      </th>
+      <th>
+        color when mouse over
+      </th>
+      <tr>
+        <td>span.myclass1</td>
+        <td>pink</td>
+        <td>blue</td>
+      </tr>
+      <tr>
+        <td>span.myclass2</td>
+        <td>pink</td>
+        <td>pink</td>
+      </tr>
+      <tr>
+        <td>span.myclass3</td>
+        <td>orange</td>
+        <td>orange</td>
+      </tr>
+      <tr>
+        <td>span.myclass4</td>
+        <td>red</td>
+        <td>red</td>
+      </tr>
+    </table>
+  </body>
+</html>

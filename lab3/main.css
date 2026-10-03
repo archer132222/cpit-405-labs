@@ -1,0 +1,37 @@
+html {
+    font-size: 25px;
+    /*font-style: italic;*/ 
+}
+body {
+    background-color: #222;
+    color: rgb(246, 240, 239);
+    
+}
+a{
+    color: aliceblue;
+}
+a:visited{
+    color: aqua;
+}
+a:hover, a:active{
+    color: aquamarine;
+}
+
+.image-preview img{
+    border-style: solid;
+    border-top-color: skyblue;
+    border-left-color: #ffefd5;
+    border-right-color: lightpink;
+    border-bottom-color: lightgreen;
+    border-width: 30px;
+    width: 30 px;
+
+
+}
+table, tr, th, td, caption{
+    border: 1px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem; 
+}
+
