@@ -34,13 +34,13 @@ likebtn.addEventListener("click", () => {
     }
 
     const kh_select = new Audio("kh_select.mp3");
-    kh_select.currentTime = 0.300;
+    kh_select.currentTime = 0.280;
     kh_select.volume = 0.4; 
 
     kh_select.play().catch(error => {
         console.warn("Audio playback was blocked or failed:", error);
     });
-    kh_select.currentTime = 0.300;
+    kh_select.currentTime = 0.280;
 
 
     likecnt++;
